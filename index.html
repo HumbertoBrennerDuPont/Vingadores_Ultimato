@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/script.js">
+    <script src="https://kit.fontawesome.com/2a5138bb18.js" crossorigin="anonymous"></script>
+    <title>Netflix-Vingadores_Ultimato</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo"><img src="img/logo.png"></a>
+        <ul class="navigation">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">TV Shows</a></li>
+            <li> <a href="#">Movies</a></li>
+            <li> <a href="#">Lastest</a></li>
+            <li> <a href="#">My list</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
+    <div class="banner">
+    
+        <div class="content">
+         <img src="img/avengers.png" class=" movietitle">
+         <h4>
+             <span>2019</span>
+             <span><i>12+</i></span>
+            <span>3h 1min</span>
+            <span>Action</span>
+         </h4>
+         <p>Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.
+         </p>
+         <div class="buttons">
+             <a href="#"><i class = "fa fa-play" aria-hidden="true">Play</i></a>
+             <a href="#"><i class = "fa fa-plus" aria-hidden="true">My List</i></a> 
+         </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="img/play.png">Watch Trailer</a>
+        </div>
+        <div class=".trailer">
+            <video src="assets/video.mp4" controls="true"></video>
+            <img src="img/close.png" class="close" onclick="toggleVideo()">
+        </div>
+</body>
+<script src="src/script.js"></script>
+</html>
