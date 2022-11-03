@@ -97,7 +97,7 @@ letter-spacing: 1px;
     position: relative;
     width:100%;
     min-height: 100vh;
-    padding: 0 100px;
+    padding: 0 31px 495px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -182,8 +182,8 @@ padding-left : 0;
 }
 .play{
     position: absolute;
-    bottom: 50px; 
-    left: 100px;
+    bottom: 429px; 
+    left: 14px;
     display: inline-flex;
     justify-self:flex-start;
     align-items: center;
@@ -228,3 +228,55 @@ padding-left : 0;
     filter: invert(1);
     max-width: 32px;
 }
+
+@media (max-width: 991px){
+
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .banner{
+        padding: 100px 50px;
+    }
+    .banner .play{
+        left: 50px;
+        font-size: 1em;
+    }
+
+    .play img {
+        margin-right: 10px;
+        max-width: 40px;
+    }
+
+    .trailer video{
+        max-width: 90%;
+    }
+}
+
+    @media (max-width: 600px){
+        header {
+            padding: 20px;
+        }
+
+        .search {
+            position: relative;
+            width: calc(100% - 20px);
+            height: 40px;
+        }
+
+        .banner{
+            padding:220px 20px 100px;
+        }
+
+        .banner .play {
+            left: 20px;
+            font-size: 1em;
+            bottom: 30px;
+        }
+    }
